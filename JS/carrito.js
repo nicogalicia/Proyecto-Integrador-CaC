@@ -24,7 +24,9 @@ const generarCards = (productos) => {
 
         // Creamos la etiqueta Card
         let cardNueva = document.createElement ("div");
-        cardNueva.className = "card m-3";
+        cardNueva.className = "card-deck";
+        cardNueva.style="width: 20rem";
+        
         let card = `
             <div class="card-body">
                 <h4 class="card-text">${producto.nombre}</h4>
