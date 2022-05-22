@@ -1,3 +1,14 @@
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  height: 100%;
+}
+body{height: 100%;}
+
+
 .masthead-navbar {
     background-color: #fff;
     display: flex;
@@ -33,4 +44,20 @@
     width: 75%;
     padding: 20px 0;
   }
+
+  main {
+    min-height: ;
+  }
   
+  footer{
+    background-color: rgb(192, 192, 192);
+   
+  }
+
+  footer .container{
+    margin: 15px 20;
+    padding: 15px 0px;
+  }
+  footer .row{
+    padding: 5px 15px;    
+  }
