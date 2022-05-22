@@ -6,8 +6,8 @@
 html{
   height: 100%;
 }
-body{height: 100%;}
-
+body{height: 100%;
+}
 
 .masthead-navbar {
     background-color: #fff;
@@ -45,13 +45,9 @@ body{height: 100%;}
     padding: 20px 0;
   }
 
-  main {
-    min-height: ;
-  }
-  
   footer{
     background-color: rgb(192, 192, 192);
-   
+   max-width: 100%;
   }
 
   footer .container{
@@ -60,4 +56,12 @@ body{height: 100%;}
   }
   footer .row{
     padding: 5px 15px;    
+  }
+
+  .col-md-3, .col-md-4{ 
+    margin: 25px 0px;
+  }
+
+  #repitePass{
+    margin: 15px 0 8px 0 ;
   }
