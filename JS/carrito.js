@@ -16,15 +16,17 @@ const generarCards = (productos) => {
     // Obtenemos el div que contendra las cards de productos
     let cards = document.getElementById("carrito");
 
-    let total = 0;
+    let totalcarrito = 0;
     
     productos.forEach( producto => {
         
-        total += producto.precio;  
+        totalcarrito += producto.precio;  
 
         // Creamos la etiqueta Card
         let cardNueva = document.createElement ("div");
-        cardNueva.className = "card m-3";
+        cardNueva.className = "card-deck";
+        cardNueva.style="width: 20rem";
+        
         let card = `
             <div class="card-body">
                 <h4 class="card-text">${producto.nombre}</h4>
@@ -40,35 +42,40 @@ const generarCards = (productos) => {
         cardNueva.innerHTML =card;
         cards.appendChild(cardNueva);
         
+        //tomamos id de elemento que está siendo procesado
         let productCard = document.getElementById("cart" + producto.id);
 
+        // capturamos evento Eliminar si se activa y sacamos el producto del carrito
         productCard.addEventListener("click", (evento)=>{
             evento.preventDefault();
-            carrito.splice(producto.id - 1, 1);
+            carrito.splice(producto - 1, 1);
+            cards.removeChild(cardNueva);
+            totalcarrito -= producto.precio;
+            localStorage.setItem("preciocarrito", totalcarrito);
         });
-
+     
 
     });
+
+    localStorage.setItem("preciocarrito", totalcarrito);
     
+
+
 }
-
-const formulario = document.getElementById("formulario");
-
-formulario.addEventListener("submit", (evento) => {
-    evento.preventDefault();
-    localStorage.setItem("Carrito", JSON.stringify(carrito));
-});
-
+//console.log("total compra: ", totalcarrito);
 generarCards(carrito);
 
-/*
 const formulario = document.getElementById("formulario");
-
+// capturamos boton finalizar de carrito para hacer la compra
 formulario.addEventListener("submit", (evento) => {
     evento.preventDefault();
     localStorage.setItem("Carrito", JSON.stringify(carrito));
+    
 });
-*/
+
+
+
+
     
 
    
