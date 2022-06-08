@@ -25,3 +25,46 @@ align-content: initial;
 .div-formu h2{
 	margin-top: 1em;
 }
+
+/* Tickets.css */
+
+
+.card-content{
+    margin-top: 20px;
+}
+
+#card{
+    border: none;
+}
+
+.card-body{
+    margin: 0px 5px;
+    display:inline;
+}
+
+body > header > section > article.ticket > form{
+    margin-top: 40px;
+}
+
+body > header > div.ticket > form > div:nth-child(3) > input{
+    background-color: rgb(202, 249, 255);
+    margin: 10px 0px;
+}
+
+body > header > div.ticket{
+    justify-content:space-around;
+}
+
+button.btn.btn-primary.col-md-4.mb-3{
+    background-color: rgb(161, 214, 99);
+    border: none;
+    margin-top: 10px;
+}
+
+footer .pos-f-t .navbar > ul{
+    flex-direction: row;
+
+}
+footer .pos-f-t .navbar > ul li{
+    padding-inline-start: 5em;
+}

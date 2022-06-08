@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Conf Bs As</title>
+    <link href="../CSS/styles.css" rel="stylesheet" type="text/css" />
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet" />
+</head>
+
+<body>
+    </header>
+        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark ">
+            <a class="navbar-brand" href="#">
+                Conf Bs As
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto mx-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            La Conferencia
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Los Oradores
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            El lugar y la fecha
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            Conviertete en orador
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-success" href="Tickets.html" tabindex="-1">
+                            Comprar Tickets
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    <header>
+    <section>
+        <article class="card-content d-flex justify-content-around">
+            <div class="card d-flex flex-row " id="card">
+                <div class="card-body text-center border border-primary">
+                    <h5 class="card-title">Estudiante</h5>
+                    <h6 class="card-text">Tiene un descuento de</h6>
+                    <h4 class="card-subtitle mb-2 text-muted">80% off</h6>
+                        <p>Presentando documentacion</p>
+                </div>
+                <div class="card-body text-center border border-info">
+                    <h5 class="card-title">Trainee</h5>
+                    <h6 class="card-text">Tiene un descuento de</h6>
+                    <h4 class="card-subtitle mb-2 text-muted">50% off</h6>
+                        <p>Presentando documentacion</p>
+                </div>
+                <div class="card-body text-center border border-warning">
+                    <h5 class="card-title">Junior</h5>
+                    <h6 class="card-text">Tiene un descuento de</h6>
+                    <h4 class="card-subtitle mb-2 text-muted">15% off</h6>
+                        <p>Presentando documentacion</p>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section>
+        <article class="ticket d-flex justify-content-around">
+
+            <form id="formu">
+                <p>VENTA</p>
+                <h3>Valor del Ticket $200</h3>
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <input type="text" class="form-control " id="validationServer01" placeholder="Nombre"> <!-- falta required-->
+                        <div class="invalid-feedback">
+                            Ingrese su Nombre!
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <input type="text" class="form-control " id="validationServer02" placeholder="Apellido"> <!-- falta required-->
+                        <div class="invalid-feedback">
+                            Ingrese su Apellido!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col-md-8 mb-3">
+                        <div class="input-group">                            
+                            <input type="text" class="form-control " id="validationServerUsername"
+                                placeholder="Correo" aria-describedby="inputGroupPrepend3"> <!-- falta required-->
+                            <div class="invalid-feedback">
+                                Please choose a Correo.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">                   
+                    <div class="col-md-4 mb-3">
+                        <label for="validationServer04">Cantidad</label>
+                        <input type="text" class="form-control " id="validationServer04" placeholder="Cantidad" value="1" required>
+                        <div class="invalid-feedback" >
+                            Por favor ingrese la cantidad!
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="validationServer05">Categoria</label>
+                        <select id="disabledSelect" class="form-control" required>
+                            <option>Estudiante</option>
+                            <option>Trainee</option>
+                            <option>Junior</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please provide a valid zip.
+                        </div>
+                    </div>
+                    <div class="col-md-5 mb-auto"></div>
+                        <input class="form-control col-md-8" id="totalPaga" type="text" placeholder="Total a pagar: $0,00" readonly>
+                    </div>
+                    <div class="form-group">
+                        <button type="reset" class="btn btn-primary col-md-4 mb-3">Borrar</button>
+                        <button type="submit" class="btn btn-primary col-md-4 mb-3">Resumen</button>
+                    </div>
+                </div>                
+            </form>
+        </article>
+    </section>
+    <footer>
+        <div class="pos-f-t">            
+            <nav class="navbar navbar-dark bg-dark">       
+                <ul class="navbar-nav mr-auto mx-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            Preguntas frecuentes
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            Contáctanos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            Prensa
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            Conferencias
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            Terminos y condiciones
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            Privacidad
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            Estudiantes
+                        </a>
+                    </li>                    
+                </ul>             
+            </nav>
+          </div>
+    </footer>
+
+    <script crossorigin="anonymous" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        src="https://code.jquery.com/jquery-3.4.1.slim.min.js">
+        </script>
+    <script crossorigin="anonymous" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js">
+        </script>
+    <script crossorigin="anonymous" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
+        </script>
+    <script src="../JS/Tickets.js"></script>
+</body>
+
+</html>
